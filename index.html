@@ -15,69 +15,76 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="name-logo">Jane Agadia</div>
       <div class="nav">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#about">Services</a></li> -->
+          <li><a href="#projects">Projects</a></li>
+          <li> <button class="contact-btn" > <a href="#contact">Contact</a></button></li>
         </ul>
+
+        <div class="menu-icon">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section id="hero" class="section" >
         <div class="hero-text">
           <div class="text-elements">
-            <h2>Hi,</h2>
-            <h1>I'm Jane Agadia.</h1>
-            <h2>Frontend developer</h2>
+            <h2>Hi 👋,</h2>
+            <span class="input"></span>
           </div>
 
           <div class="hero-btns">
-            <button class="hero-btn btn-actn">Hire me</button>
-            <button class="hero-btn btn-cv">Get Cv</button>
+            <button class="hero-btn">Hire me</button>
           </div>
         </div>
 
         <div class="hero-image">
-          <img src="./img/janee2.jpg" alt="jane" />
+          <img src="./img/janee2 (2).jpg" alt="jane" />
         </div>
       </section>
 
-      <section class="about">
+      <section id="about" class="section" >
         <h2>ABOUT ME</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-          repudiandae velit vero ducimus incidunt enim consectetur impedit unde,
-          dolorum minima labore, rerum at odit dolore debitis blanditiis, quis
-          delectus earum. Lorem ipsum dolor, sit amet consectetur adipisicing
-          elit. Amet laudantium nulla, voluptate sunt, corrupti quas officiis
-          quis facere nemo deleniti sed ea ab modi minima saepe eligendi iste,
-          molestiae odit? Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Vitae quis fugiat consectetur possimus? Dolore nam, suscipit
-          facere doloribus eaque odio rerum neque ipsum sit recusandae corporis
-          sequi. Eaque, nisi facere?
+         <p>
+          I am passionate about what I do with an enoromous energy drive to
+          complete tasks. I also exhibit good teams spirit and also good
+          leadership skills when required.
+       My experience integrating with other team members
+            including feedback has indicated that I have an excellent reputation
+          for solving problems and improving client satisfaction and that me
+          being too fun to work with.
+         </p>
+
+          <p>
+             What motivates me most is
+          how I do my work has been “Curiosity and Perseverance”, which has
+          guided me to be where I am today. I'm eager to contribute to the
+          team’s success through hard work, attention to detail and
+          organizational skills with a clear understanding of tasks and
+          training; motivated to grow, learn and excel in all ramifications.
+        </p>
         </p>
         <div class="cv-element">
           <button class="check-cv">Check Cv</button>
         </div>
       </section>
 
-      <section class="services">
+      <!-- <section id="services">
         <h2>SERVICES OFFERED</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-          similique commodi, sit nam ullam nostrum corrupti, molestias laborum
-          enim distinctio ea nobis deserunt saepe architecto iste possimus quasi
-          in repellat.
+          I build inspiring
         </p>
-      </section>
+      </section> -->
 
-      <section class="projects">
+      <section id="projects" class="section" >
         <h2 class="project-heading">PROJECTS</h2>
         <div class="project-container">
           <div class="project">
@@ -139,12 +146,10 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="contact" class="section" >
       <h2>CONTACT ME</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum alias
-        provident, facilis, repellat fugit, praesentium reprehenderit
-        repellendus dolor
+  Got a message, suggestion or proposal?
       </p>
 
       <div class="contact-elements">
@@ -157,8 +162,7 @@
           <label>
             <textarea type="text" placeholder="Message"></textarea>
           </label>
-
-          <button>Submit</button>
+          <input type="submit" class="submit" />
         </form>
 
         <div class="contact">
@@ -173,13 +177,14 @@
             <ul>
               <li>Phone</li>
               <li>08115237006</li>
+              <li>08141310089</li>
             </ul>
           </div>
 
           <div class="contact-list">
             <ul>
               <li>Email</li>
-              <li>janeagadia24@gmail.com</li>
+              <li>janeagadiabiz@gmail.com</li>
             </ul>
           </div>
         </div>
@@ -194,5 +199,16 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      let typed = new Typed(".input", {
+        strings: ["I'm Jane Agadia.", "I am a Frontend developer."],
+        typeSpeed: 45,
+        backSpeed: 130,
+        loop: true,
+      });
+    </script>
+
+    <script src="./script.js" ></script>
   </body>
 </html>
