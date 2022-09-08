@@ -43,3 +43,4 @@ aboutNav.addEventListener("click", function () {
 projectsNav.addEventListener("click", function () {
   projectSection.scrollIntoView({ behavior: "smooth" });
 });
+hvj;
