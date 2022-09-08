@@ -13,11 +13,11 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 11rem;
+  padding: 1.5rem 0rem;
   font-size: 1.6rem;
   position: sticky;
-  /* width: 130rem; */
-  margin: 0rem auto;
+  width: 110rem;
+  margin: 0.1rem auto;
   z-index: 100;
   top: 0;
   background-color: #000;
@@ -30,6 +30,7 @@ body {
   padding: 0.7rem 3rem;
   font-size: 1.4rem;
   font-family: inherit;
+  color: #fff;
 }
 main {
   /* content: "";
@@ -50,16 +51,16 @@ main {
   justify-content: center;
   align-items: center;
 }
-ul a {
+/* ul a {
   text-decoration: none;
   color: #fff;
-}
-ul a:hover,
-ul a:active {
+} */
+ul :hover,
+ul :active {
   /* padding: 1rem 1rem; */
   /* background-color: #e6e6ec; */
   border-radius: 0.2rem;
-  color: rgb(236, 176, 22);
+  color: #0707ced5;
   font-weight: 600;
 }
 .nav:hover,
@@ -103,7 +104,8 @@ ul a:active {
 .hero-btn:hover,
 .hero-btn:active {
   cursor: pointer;
-  color: rgb(236, 176, 22);
+  color: #020246;
+  font-weight: 700;
 }
 .btn-cv {
   background-color: #fff;
@@ -149,23 +151,7 @@ ul a:active {
   background-color: #fff;
   font-weight: 600;
 }
-#services {
-  /* margin: 2rem 9rem; */
-  font-size: 1.6rem;
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: #ccccd9;
-}
-#services h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #010113;
-}
-#services p {
-  line-height: 2.5rem;
-  color: #010113cb;
-  margin-bottom: 3rem;
-}
+
 #projects {
   padding: 9rem 9rem;
 }
@@ -177,23 +163,24 @@ ul a:active {
 .project:hover {
   transform: scale(1.008);
   overflow: hidden;
-  box-shadow: #010130b0 0px 3px 8px;
 }
 .project {
+  box-shadow: #010130b0 1px 0px 5px 4px;
   padding: 4rem 2rem;
   font-size: 1.6rem;
-  background-color: rgba(255, 255, 255, 0.842);
+  background-color: #000;
   border-radius: 0.2rem;
 }
 .project p {
   line-height: 2.5rem;
-
+  color: #fff;
   margin-bottom: 2rem;
 }
 .project h2 {
   font-weight: 600;
   font-size: 2rem;
   margin-bottom: 3rem;
+  color: #fff;
 }
 .project-heading {
   font-size: 3rem;
@@ -206,11 +193,12 @@ ion-icon {
   justify-content: center;
   align-content: center;
   margin-bottom: 2rem;
+  color: #fff;
 }
 .project-btn {
   padding: 1rem 2rem;
-  background-color: #111;
-  color: #fff;
+  background-color: #fff;
+  /* color: #fff; */
   border: none;
   border-radius: 0.5rem;
 }
