@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jane's Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/queries.css">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +18,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="name-logo">Jane Agadia</div>
+      <div class="name-logo"> <a href="./intro.html">Jane Agadia</a> </div>
       <div class="nav">
         <ul>
           <li class="hero-scroll">Home</li>
@@ -29,14 +31,26 @@
           <ion-icon name="menu-outline"></ion-icon>
         </div>
       </div>
+
+<div class="modal hidden">
+  <ul>
+    <li class="hero-scroll"> <a href="#about">Home</a> </li>
+    <li class="about-scroll" >About</li>
+    <li class="projects-scroll" >Projects</li>
+    <li> <button class="contact-btn">Contact</button></li>
+  </ul>
+</div>
+
     </header>
 
     <main>
       <section id="hero" class="section" >
         <div class="hero-text">
           <div class="text-elements">
-            <h2>Hi 👋,</h2>
+            <h2 class="hero-greeting" >Hello 👋,</h2>
             <span class="input"></span>
+
+            <p>I enjoy creating interactive websites and applications. I also enjoy teaching, smart converstions and connecting with people.</p>
           </div>
 
           <div class="hero-btns">
@@ -45,7 +59,7 @@
         </div>
 
         <div class="hero-image">
-          <img src="./img/janee2 (2).jpg" alt="jane" />
+          <img src="./img/WhatsApp Image 2022-09-12 at 02.35.30.jpeg" alt="jane" />
         </div>
       </section>
 
@@ -80,110 +94,93 @@
       <section id="projects" class="section" >
         <h2 class="project-heading">PROJECTS</h2>
         <div class="project-container">
+
           <div class="project">
-            <ion-icon name="repeat-outline"> </ion-icon>
-            <h2>JAUIT WEBSITE</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-              ratione cupiditate quaerat.
-              <voluptatum class="lorem"></voluptatum>
-            </p>
             <div>
-              <button class="project-btn btn-actn">View site</button>
-              <button class="project-btn">View code</button>
+              <ion-icon name="repeat-outline"> </ion-icon>
+              <h2>JAUIT WEBSITE</h2>
+              <p>
+                A clone of the JAUIT website
+               </p>
+            </div>
+
+            <div class="project-btns">
+              <button class="project-btn btn-actn"> <a href="https://jauitwebsiteclone.netlify.app/"> View site</a></button>
+              <button class="project-btn"> <a href="https://github.com/Janeagadia/jauit-website">View code</a> </button>
             </div>
           </div>
 
           <div class="project">
-            <ion-icon name="logo-google"></ion-icon>
-            <h2>GOOGLE CLONE</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-              ratione cupiditate quaerat.
-              <voluptatum class="lorem"></voluptatum>
-            </p>
             <div>
-              <button class="project-btn btn-actn">View site</button>
-              <button class="project-btn">View code</button>
+              <ion-icon name="logo-google"></ion-icon>
+              <h2>GOOGLE CLONE</h2>
+              <p>
+                A clone of google home-page with dark and light mode features
+                
+              </p>
+            </div>
+            <div class="project-btns">
+              <button class="project-btn btn-actn"> <a href="">View site</a> </button>
+              <button class="project-btn"> <a href="https://github.com/Janeagadia/google-clone">View code</a> </button>
             </div>
           </div>
 
           <div class="project">
-            <ion-icon name="list-outline"></ion-icon>
-            <h2>TO-DO LIST INTERFACE</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-              ratione cupiditate quaerat.
-              <voluptatum class="lorem"></voluptatum>
-            </p>
             <div>
-              <button class="project-btn btn-actn">View site</button>
-              <button class="project-btn">View code</button>
+              <ion-icon name="list-outline"></ion-icon>
+              <h2>TO-DO LIST INTERFACE</h2>
+              <p>
+                An interface designed to create a list ot tasks in order such that can be easily edited or deleted after completion.
+              </p>
+            </div>
+
+            <div class="project-btns">
+              <button class="project-btn btn-actn"> <a href="https://jstodolist-firstjs.netlify.app/">View site</a> </button>
+              <button class="project-btn"> <a href="https://github.com/Janeagadia/To-do-list-first-Js-project">View code</a> </button>
             </div>
           </div>
 
           <div class="project">
-            <ion-icon name="fast-food-outline"></ion-icon>
-            <h2>FOOD RECIPE PAGE</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-              ratione cupiditate quaerat.
-              <voluptatum class="lorem"></voluptatum>
-            </p>
             <div>
-              <button class="project-btn btn-actn">View site</button>
-              <button class="project-btn">View code</button>
+              <ion-icon name="fast-food-outline"></ion-icon>
+              
+              <h2>FOOD RECIPE PAGE</h2>
+              <p>
+                A website about Nigerian soup recipies
+                
+              </p>
+            </div>
+            <div class="project-btns">
+              <button class="project-btn btn-actn"> <a href="https://nigeriantastydelicacies.netlify.app/">View site</a> </button>
+              <button class="project-btn"> <a href="https://github.com/Janeagadia/Food-Recipes-site">View code</a> </button>
             </div>
           </div>
         </div>
       </section>
-    </main>
-
-    <footer id="contact" class="section" >
-      <h2>CONTACT ME</h2>
-      <p>
-  Got a message, suggestion or proposal?
-      </p>
-
-      <div class="contact-elements">
-        <form>
-          <label> <input type="text" placeholder="Name" /> </label>
-          <label>
-            <input type="email" placeholder="Email address" form />
-          </label>
-          <label> <input type="text" placeholder="Title" /> </label>
-          <label>
-            <textarea type="text" placeholder="Message"></textarea>
-          </label>
-          <input type="submit" class="submit" />
-        </form>
-
-        <div class="contact">
-          <div class="contact-list">
-            <ul>
-              <li>Address</li>
-              <li>Jakpa road, Delta state</li>
-            </ul>
-          </div>
-
-          <div class="contact-list">
-            <ul>
-              <li>Phone</li>
-              <li>08115237006</li>
-              <li>08141310089</li>
-            </ul>
-          </div>
-
-          <div class="contact-list">
-            <ul>
-              <li>Email</li>
-              <li>janeagadiabiz@gmail.com</li>
-            </ul>
-          </div>
-        </div>
+      
+      <footer id="contact" class="section" >
+      
+      <div class="footer-icon">
+       <a href="https://github.com/Janeagadia" target="blank">
+      <ion-icon name="logo-github"></ion-icon>
+       </a> 
+       <a href="https://wa.me/message/JVOKBIKMBAITH1" target="blank">
+         <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+        <a href="janeagadiabiz@gmail.com" target="blank">
+        <ion-icon name="mail-open-outline"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/jane-agadia" target="blank">
+        <ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://twitter.com/Agadiateejay?t=0qwgpiHLzrkPqLFzvFQAw&s=08" target="blank">
+        <ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://www.facebook.com/jane.agadia" target="blank">
+        <ion-icon name="logo-facebook"></ion-icon></a>
+        <!-- <ion-icon name="git-branch-outline"></ion-icon> -->
       </div>
     </footer>
-
+    <a href=""></a>
+    
+  </main>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

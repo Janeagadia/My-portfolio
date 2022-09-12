@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+  background-color: #e6e6ed;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 9rem;
+  font-size: 1.6rem;
+  width: 100%;
+  margin: 0.1rem auto;
+  background-color: #020246;
+  color: #fff;
+  align-items: center;
+}
+.contact-btn {
+  background-color: #1111;
+  border: 1px solid #fff;
+  padding: 0.7rem 3rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  color: #fff;
+}
+
+.name-logo {
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+ul :hover,
+ul :active {
+  /* padding: 1rem 1rem; */
+  /* background-color: #e6e6ec; */
+  border-radius: 0.2rem;
+  color: #000;
+  font-weight: 600;
+}
+.nav:hover,
+.nav:active {
+  cursor: pointer;
+}
+.nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu-icon {
+  display: none;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 100rem;
+  margin: 8rem auto 4rem auto;
+}
+.text-content {
+  margin-top: 9rem;
+}
+.intro-icon {
+  margin: 3rem 0rem;
+  display: flex;
+  gap: 2rem;
+}
+h1 {
+  font-size: 6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+span {
+  color: #020246;
+}
+ion-icon {
+  color: #020246;
+  font-size: 4rem;
+}
+ion-icon:hover {
+  cursor: pointer;
+  transform: translateY(-1rem);
+}
+.profile-btn {
+  padding: 2rem 5rem;
+  /* border-radius: 2rem; */
+  border-radius: 0 10px 20px;
+  color: #fff;
+  background-color: #020246;
+  border: none;
+}
+.profile-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.profile-btn:hover {
+  cursor: pointer;
+}
+main img {
+  width: 40rem;
+  border-radius: 50%;
+}
+.profile-image {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+}
+
+main img:hover {
+  transform: scale(1.01);
+  overflow: hidden;
+}
+
+.modal ul {
+  line-height: 2;
+  list-style: none;
+}
+.modal ul a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #04081d;
+  font-weight: 600;
+}

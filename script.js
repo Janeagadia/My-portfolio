@@ -10,22 +10,22 @@ const aboutSection = document.querySelector("#about");
 const projectsNav = document.querySelector(".projects-scroll");
 const projectSection = document.querySelector("#projects");
 
-const revealSection = function (entries, observer) {
-  const [entry] = entries;
-  // console.log(entry);
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove("section-hidden");
-};
+// const revealSection = function (entries, observer) {
+//   const [entry] = entries;
+//   // console.log(entry);
+//   if (!entry.isIntersecting) return;
+//   entry.target.classList.remove("section-hidden");
+// };
 
-const sectionObserver = new IntersectionObserver(revealSection, {
-  root: null,
-  threshold: 0.15,
-});
+// const sectionObserver = new IntersectionObserver(revealSection, {
+//   root: null,
+//   threshold: 0.15,
+// });
 
-allSections.forEach(function (section) {
-  sectionObserver.observe(section);
-  section.classList.add("section-hidden");
-});
+// allSections.forEach(function (section) {
+//   sectionObserver.observe(section);
+//   section.classList.add("section-hidden");
+// });
 
 // implementing scroll
 heroNav.addEventListener("click", function () {
@@ -43,4 +43,12 @@ aboutNav.addEventListener("click", function () {
 projectsNav.addEventListener("click", function () {
   projectSection.scrollIntoView({ behavior: "smooth" });
 });
-hvj;
+
+const modalbtn = document.querySelector(".menu-icon");
+const modal = document.querySelector(".modal");
+
+modalbtn.addEventListener("click", function () {
+  console.log("a button was clicked");
+
+  modal.classList.toggle("hidden");
+});

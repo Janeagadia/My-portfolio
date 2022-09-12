@@ -9,20 +9,27 @@ html {
 }
 body {
   background-color: #000;
+  overflow-x: hidden;
 }
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 0rem;
+  padding: 1.5rem 9rem;
   font-size: 1.6rem;
-  position: sticky;
-  width: 110rem;
+  position: fixed;
+  width: 100%;
   margin: 0.1rem auto;
   z-index: 100;
   top: 0;
+  /* border-bottom: 0.02px solid rgba(255, 255, 255, 0.705); */
   background-color: #000;
   color: #fff;
   align-items: center;
+}
+.name-logo a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Dancing Script", cursive;
 }
 .contact-btn {
   background-color: #1111;
@@ -33,16 +40,19 @@ body {
   color: #fff;
 }
 main {
-  /* content: "";
+  content: "";
   position: absolute;
   z-index: -1;
   top: 0;
-  right: 0; */
-  border-top: 0.02px solid rgba(255, 255, 255, 0.705);
+  right: 0;
+  margin-top: 5rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.705);
 }
 .name-logo {
-  font-family: "Dancing Script", cursive;
   font-weight: 600;
+}
+.hero-greeting {
+  font-size: 4rem;
 }
 .nav ul {
   list-style: none;
@@ -51,10 +61,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-/* ul a {
-  text-decoration: none;
-  color: #fff;
-} */
+
 ul :hover,
 ul :active {
   /* padding: 1rem 1rem; */
@@ -71,10 +78,10 @@ ul :active {
   display: none;
 }
 
-.section-hidden {
+/* .section-hidden {
   opacity: 0;
   transform: translateY(8rem);
-}
+} */
 
 #hero {
   display: flex;
@@ -85,9 +92,14 @@ ul :active {
   width: 110rem;
   margin: 5rem auto 0rem auto;
 }
+#hero p {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.712);
+  font-size: 1.7rem;
+}
 .input {
   margin-top: 10rem;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .text-elements {
   margin: 12rem 0rem 3rem 0rem;
@@ -98,14 +110,17 @@ ul :active {
 }
 .hero-btn {
   padding: 1rem 4rem;
-  background-color: #fff;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
   font-weight: 600;
 }
 .hero-btn:hover,
 .hero-btn:active {
   cursor: pointer;
-  color: #020246;
+  color: #0707ced5;
   font-weight: 700;
+  transform: translateY(0.5rem);
 }
 .btn-cv {
   background-color: #fff;
@@ -118,8 +133,8 @@ ul :active {
 .hero-image img {
   width: 40rem;
   border-radius: 5%;
-  opacity: 0.7;
-  height: 70vh;
+  height: fit-content;
+  /* height: 70vh; */
 }
 .hero-image img:hover {
   transform: scale(1.01);
@@ -130,7 +145,7 @@ ul :active {
   width: 100rem;
   margin: 0rem auto;
   font-size: 1.6rem;
-  padding: 6rem 2rem;
+  padding: 0rem 2rem 2rem 3rem;
 }
 #about h2 {
   text-align: center;
@@ -148,8 +163,16 @@ ul :active {
 }
 .check-cv {
   padding: 1rem 4rem;
-  background-color: #fff;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
   font-weight: 600;
+}
+.check-cv:hover {
+  cursor: pointer;
+  transform: translateY(0.5rem);
+  color: #0707ced5;
+  font-weight: 700;
 }
 
 #projects {
@@ -163,6 +186,7 @@ ul :active {
 .project:hover {
   transform: scale(1.008);
   overflow: hidden;
+  cursor: pointer;
 }
 .project {
   box-shadow: #010130b0 1px 0px 5px 4px;
@@ -170,11 +194,18 @@ ul :active {
   font-size: 1.6rem;
   background-color: #000;
   border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .project p {
   line-height: 2.5rem;
   color: #fff;
   margin-bottom: 2rem;
+}
+.project a {
+  text-decoration: none;
+  color: #fff;
 }
 .project h2 {
   font-weight: 600;
@@ -197,10 +228,18 @@ ion-icon {
 }
 .project-btn {
   padding: 1rem 2rem;
-  background-color: #fff;
-  /* color: #fff; */
-  border: none;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
   border-radius: 0.5rem;
+}
+.project-btn:hover {
+  cursor: pointer;
+  transform: translateY(0.5rem);
+  font-weight: 700;
+}
+.project-btn a:hover {
+  color: #0707ced5;
 }
 footer {
   font-size: 1.6rem;
@@ -253,3 +292,43 @@ form textarea {
   list-style: none;
   color: rgba(255, 255, 255, 0.753);
 }
+.footer-icon {
+  margin-top: 6rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+footer ion-icon {
+  color: #020246;
+}
+footer ion-icon:hover {
+  cursor: pointer;
+  transform: translateY(-1rem);
+}
+
+.modal {
+  display: none;
+}
+
+/* light mode */
+/* body {
+  background-color: #e6e6ed;
+}
+.header {
+  background-color: #020246;
+  color: #fff;
+}
+.hero-btn {
+  background-color: #020246;
+  color: #fff;
+}
+#hero {
+  color: #000;
+}
+#hero p {
+  color: #000;
+}
+.input {
+  font-weight: 700;
+  color: #01013d;
+} */
