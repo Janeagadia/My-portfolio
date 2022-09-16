@@ -1,22 +1,19 @@
 /* 1160px */
 
 @media (max-width: 73em) {
-  #hero {
-    width: 80vw;
+  .container {
+    width: 80%;
+    margin: 5rem auto;
   }
   .input {
     font-size: 3.5rem;
   }
   .hero-image img {
-    width: 35rem;
+    width: 100%;
   }
   #about {
-    width: 80vw;
+    width: 80%;
     padding: 0rem;
-  }
-  #projects {
-    /* width: 80vw; */
-    padding: 8rem 8rem;
   }
 }
 
@@ -25,13 +22,12 @@
   html {
     font-size: 58%;
   }
+  .container {
+    margin-top: 9rem;
+  }
 }
 /* 920 */
 @media (max-width: 58em) {
-  #hero {
-    height: 80vh;
-    justify-content: center;
-  }
   .project-btns {
     display: flex;
     flex-direction: column;
@@ -59,7 +55,6 @@
   #hero {
     display: flex;
     flex-direction: column;
-    height: 80vh;
     margin: 4rem auto 4rem auto;
     align-items: center;
     justify-content: space-evenly;
@@ -98,7 +93,6 @@
   .modal {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
     align-items: center;
     padding: 15rem;
     background-color: rgba(255, 255, 255, 0.514);
@@ -113,10 +107,23 @@
     backdrop-filter: blur(2px);
     transition: all 0.3s;
     transform: translateX(0%);
+    font-size: 3rem;
+    font-weight: 600;
   }
   .modal ul {
-    line-height: 2;
     list-style: none;
+    line-height: 6rem;
+  }
+  .modal a {
+    text-decoration: none;
+    color: black;
+  }
+  .contact-btn {
+    border: none;
+    color: #000;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0rem;
   }
   .hidden {
     /* display: none; */

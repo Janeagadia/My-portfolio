@@ -1,8 +1,5 @@
 /* 1280px */
 @media (max-width: 75em) {
-  header {
-    padding: 1.5rem 5rem;
-  }
   main {
     width: 85vw;
   }
@@ -10,9 +7,6 @@
 
 /* 1000px */
 @media (max-width: 63em) {
-  header {
-    padding: 1.5rem 5rem;
-  }
   main {
     width: 82vw;
   }

@@ -12,15 +12,16 @@ body {
   background-color: #e6e6ed;
 }
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 9rem;
-  font-size: 1.6rem;
-  width: 100%;
-  margin: 0.1rem auto;
   background-color: #020246;
+  max-width: 100%;
+}
+.nav {
+  display: flex;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  /* max-width: 60%; */
+  margin: 0.1rem auto;
   color: #fff;
-  align-items: center;
 }
 .contact-btn {
   background-color: #1111;
@@ -35,33 +36,7 @@ header {
   font-family: "Dancing Script", cursive;
   font-weight: 600;
 }
-.nav ul {
-  list-style: none;
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-  align-items: center;
-}
 
-ul :hover,
-ul :active {
-  /* padding: 1rem 1rem; */
-  /* background-color: #e6e6ec; */
-  border-radius: 0.2rem;
-  color: #000;
-  font-weight: 600;
-}
-.nav:hover,
-.nav:active {
-  cursor: pointer;
-}
-.nav a {
-  text-decoration: none;
-  color: #fff;
-}
-.menu-icon {
-  display: none;
-}
 main {
   display: flex;
   justify-content: space-between;

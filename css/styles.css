@@ -11,6 +11,12 @@ body {
   background-color: #000;
   overflow-x: hidden;
 }
+
+.container {
+  max-width: 130rem;
+  margin: 8rem auto;
+  padding: 0rem 5rem;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -39,15 +45,10 @@ body {
   font-family: inherit;
   color: #fff;
 }
-main {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
+/* main {
   margin-top: 5rem;
   border-top: 2px solid rgba(255, 255, 255, 0.705);
-}
+} */
 .name-logo {
   font-weight: 600;
 }
@@ -78,37 +79,33 @@ ul :active {
   display: none;
 }
 
-/* .section-hidden {
-  opacity: 0;
-  transform: translateY(8rem);
-} */
-
 #hero {
   display: flex;
-  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  justify-content: space-around;
   font-size: 1.8rem;
   color: #fff;
-  height: 100vh;
-  width: 110rem;
-  margin: 5rem auto 0rem auto;
+  /* margin: 5rem auto 2rem auto; */
+  /* padding: 4rem 5rem; */
 }
 #hero p {
   margin-top: 1rem;
   color: rgba(255, 255, 255, 0.712);
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  width: 80%;
 }
 .input {
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   font-size: 5rem;
 }
-.text-elements {
-  margin: 12rem 0rem 3rem 0rem;
-}
+
 .hero-btns {
   display: flex;
   align-content: center;
 }
 .hero-btn {
+  margin-top: 3rem;
   padding: 1rem 4rem;
   background-color: #000;
   color: #fff;
@@ -127,9 +124,6 @@ ul :active {
   color: #111;
   border-radius: 0 10px 20px;
 }
-.hero-image {
-  margin-right: 0rem;
-}
 .hero-image img {
   width: 40rem;
   border-radius: 5%;
@@ -143,7 +137,7 @@ ul :active {
 
 #about {
   width: 100rem;
-  margin: 0rem auto;
+  margin: 9rem auto 2rem auto;
   font-size: 1.6rem;
   padding: 0rem 2rem 2rem 3rem;
 }
@@ -175,8 +169,8 @@ ul :active {
   font-weight: 700;
 }
 
-#projects {
-  padding: 9rem 9rem;
+.project-section {
+  margin: 0rem auto;
 }
 .project-container {
   display: grid;
@@ -189,7 +183,7 @@ ul :active {
   cursor: pointer;
 }
 .project {
-  box-shadow: #010130b0 1px 0px 5px 4px;
+  box-shadow: #f0f0f3b0 1px 0px 3px 1px;
   padding: 4rem 2rem;
   font-size: 1.6rem;
   background-color: #000;
@@ -270,16 +264,6 @@ footer p {
   gap: 2rem;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-form input,
-form textarea {
-  width: 50rem;
-  padding: 0.5rem 1.5rem;
-}
 .submit {
   background-color: #111;
   border: none;
@@ -299,7 +283,7 @@ form textarea {
   justify-content: center;
 }
 footer ion-icon {
-  color: #020246;
+  color: #fff;
 }
 footer ion-icon:hover {
   cursor: pointer;
