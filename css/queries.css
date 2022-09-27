@@ -177,6 +177,12 @@
   .hero-greeting {
     font-size: 3rem;
   }
+  #about h2 {
+    font-size: 2rem;
+  }
+  #projects h2 {
+    font-size: 2rem;
+  }
 }
 
 /* 440px */
