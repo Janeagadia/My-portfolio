@@ -1,0 +1,198 @@
+/* 1160px */
+
+@media (max-width: 73em) {
+  .container {
+    width: 80%;
+    margin: 5rem auto;
+  }
+  .input {
+    font-size: 3.5rem;
+  }
+  .hero-image img {
+    width: 100%;
+  }
+  #about {
+    width: 80%;
+    padding: 0rem;
+  }
+}
+
+/* 1030 */
+@media (max-width: 65em) {
+  html {
+    font-size: 58%;
+  }
+  .container {
+    margin-top: 9rem;
+  }
+}
+/* 920 */
+@media (max-width: 58em) {
+  .project-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .input {
+    font-size: 3rem;
+  }
+  .hero-greeting {
+    font-size: 3rem;
+  }
+  #hero p {
+    font-size: 1.6rem;
+  }
+}
+
+/* 810 */
+@media (max-width: 51em) {
+  html {
+    font-size: 55%;
+  }
+}
+/* 760 */
+@media (max-width: 48em) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto 4rem auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .input {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  .text-elements {
+    text-align: center;
+    margin: 1rem 0rem;
+  }
+  .hero-btns {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    /* height: 30vh; */
+  }
+  .hero-image img {
+    height: fit-content;
+    border-radius: 1%;
+  }
+  .nav ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    position: relative;
+    z-index: 106;
+  }
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15rem;
+    background-color: rgba(255, 255, 255, 0.514);
+    color: #04081d;
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    backdrop-filter: blur(2px);
+    transition: all 0.3s;
+    transform: translateX(0%);
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .modal ul {
+    list-style: none;
+    line-height: 6rem;
+  }
+  .modal a {
+    text-decoration: none;
+    color: black;
+  }
+  .contact-btn {
+    border: none;
+    color: #000;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0rem;
+  }
+  .hidden {
+    /* display: none; */
+    transform: translateX(100%);
+  }
+  /* .modal ul a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #04081d;
+    font-weight: 600;
+  } */
+
+  .menu-icon ion-icon {
+    color: aliceblue;
+  }
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .header {
+    padding: 1.5rem 5rem;
+  }
+}
+
+/* 520px */
+@media (max-width: 32em) {
+  html {
+    font-size: 51%;
+  }
+  footer {
+    font-size: 1.6rem;
+    padding: 3rem 6rem;
+  }
+  .footer-icon {
+    margin-top: 5rem;
+    gap: 1.5rem;
+  }
+}
+
+/* 440px */
+@media (max-width: 28em) {
+  #hero {
+    margin: 0rem auto 2rem auto;
+  }
+  .hero-image img {
+    width: 30rem;
+  }
+  .hero-image img {
+    border-radius: 1%;
+  }
+  .hero-image {
+    margin-top: 0rem;
+  }
+  .hero-btns {
+    margin-top: 2rem;
+  }
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .footer-icon {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0rem 4rem;
+  }
+  .input {
+    font-size: 2.5rem;
+  }
+}

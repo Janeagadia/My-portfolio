@@ -1,0 +1,153 @@
+/* 1280px */
+@media (max-width: 75em) {
+  main {
+    width: 85vw;
+  }
+}
+
+/* 1000px */
+@media (max-width: 63em) {
+  main {
+    width: 82vw;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+/* 860px */
+@media (max-width: 54em) {
+  html {
+    font-size: 60%;
+  }
+  main img {
+    width: 35rem;
+  }
+  .profile-image {
+    width: 35rem;
+    height: 35rem;
+  }
+}
+
+/* 800px */
+@media (max-width: 51em) {
+  html {
+    font-size: 58%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 1.9rem;
+  }
+  main img {
+    width: 30rem;
+  }
+  .profile-image {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+/* 700px */
+@media (max-width: 44em) {
+  html {
+    font-size: 55%;
+  }
+}
+/* 650px */
+@media (max-width: 41em) {
+  html {
+    font-size: 53%;
+  }
+  body {
+    font-size: 2rem;
+    background-color: #e6e6ed;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+/* 600px */
+@media (max-width: 38em) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    width: 80vw;
+    margin: 0;
+    margin: 1rem auto;
+    text-align: center;
+  }
+  main img {
+    width: 30rem;
+  }
+  .img-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  .intro-icon {
+    justify-content: center;
+    margin: 3rem 0rem;
+    gap: 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  .text-content {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .nav ul {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-icon ion-icon {
+    color: aliceblue;
+  }
+}
+
+/* 500px */
+@media (max-width: 32em) {
+  html {
+    font-size: 50%;
+  }
+  .text-content {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  main {
+    text-align: center;
+    margin: 0rem auto 1rem auto;
+  }
+}
+
+/* 500px */
+@media (max-width: 27em) {
+  main img {
+    width: 25rem;
+  }
+  .img-container {
+    margin-top: 5rem;
+  }
+  .text-content {
+    margin-top: 0rem;
+    /* text-align: center; */
+  }
+  .profile-btn {
+    padding: 2rem 3rem;
+  }
+}
