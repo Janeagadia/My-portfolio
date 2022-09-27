@@ -1,5 +1,6 @@
 "use strict";
 
+const body = document.querySelector("body");
 const allSections = document.querySelectorAll(".section");
 const footer = document.querySelector("#contact");
 const heroSection = document.querySelector("#hero");
@@ -64,6 +65,7 @@ projectsNav.addEventListener("click", function () {
   projectSection.scrollIntoView({ behavior: "smooth" });
 });
 
+// nav
 const modalbtn = document.querySelector(".menu-icon");
 const modal = document.querySelector(".modal");
 
@@ -72,3 +74,7 @@ modalbtn.addEventListener("click", function () {
 
   modal.classList.toggle("hidden");
 });
+
+// body.addEventListener("click", function () {
+//   modal.classList.remove("hidden");
+// });

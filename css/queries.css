@@ -174,6 +174,9 @@
   .check-resume {
     padding: 1rem 2rem;
   }
+  .hero-greeting {
+    font-size: 3rem;
+  }
 }
 
 /* 440px */
@@ -206,5 +209,15 @@
   }
   #about {
     margin: 0rem auto 6rem auto;
+    padding: 0rem 0rem 3rem 0rem;
+  }
+  #hero p {
+    line-height: 2.2rem;
+  }
+  .input {
+    font-size: 2.5rem;
+  }
+  .hero-greeting {
+    font-size: 2.7rem;
   }
 }
