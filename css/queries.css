@@ -42,6 +42,9 @@
   #hero p {
     font-size: 1.6rem;
   }
+  #about {
+    margin: 4rem auto 6rem auto;
+  }
 }
 
 /* 810 */
@@ -129,12 +132,6 @@
     /* display: none; */
     transform: translateX(100%);
   }
-  /* .modal ul a {
-    font-size: 3rem;
-    text-decoration: none;
-    color: #04081d;
-    font-weight: 600;
-  } */
 
   .menu-icon ion-icon {
     color: aliceblue;
@@ -152,7 +149,7 @@
 /* 520px */
 @media (max-width: 32em) {
   html {
-    font-size: 51%;
+    font-size: 53%;
   }
   footer {
     font-size: 1.6rem;
@@ -161,6 +158,21 @@
   .footer-icon {
     margin-top: 5rem;
     gap: 1.5rem;
+  }
+  .container {
+    padding: 0rem 2rem;
+  }
+  .hero-btns {
+    margin: 2rem 0rem;
+  }
+  #hero p {
+    text-align: center;
+  }
+  #about {
+    margin: 2rem auto 6rem auto;
+  }
+  .check-resume {
+    padding: 1rem 2rem;
   }
 }
 
@@ -174,9 +186,6 @@
   }
   .hero-image img {
     border-radius: 1%;
-  }
-  .hero-image {
-    margin-top: 0rem;
   }
   .hero-btns {
     margin-top: 2rem;
@@ -194,5 +203,8 @@
   }
   .input {
     font-size: 2.5rem;
+  }
+  #about {
+    margin: 0rem auto 6rem auto;
   }
 }

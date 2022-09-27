@@ -45,10 +45,7 @@ body {
   font-family: inherit;
   color: #fff;
 }
-/* main {
-  margin-top: 5rem;
-  border-top: 2px solid rgba(255, 255, 255, 0.705);
-} */
+
 .name-logo {
   font-weight: 600;
 }
@@ -61,6 +58,10 @@ body {
   gap: 3rem;
   justify-content: center;
   align-items: center;
+}
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 ul :hover,
@@ -80,20 +81,28 @@ ul :active {
 }
 
 #hero {
-  display: flex;
-  width: 90%;
+  /* width: 90%; */
+  padding: 5rem 0rem 9rem 0rem;
   align-items: center;
+  align-content: center;
   justify-content: space-around;
   font-size: 1.8rem;
   color: #fff;
-  /* margin: 5rem auto 2rem auto; */
-  /* padding: 4rem 5rem; */
+  /* max-width: 100rem; */
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+.text-elements {
+  text-align: center;
 }
 #hero p {
   margin-top: 1rem;
   color: rgba(255, 255, 255, 0.712);
   font-size: 1.8rem;
-  width: 80%;
+  text-align: center;
+  /* width: 80%; */
 }
 .input {
   /* margin-top: 10rem; */
@@ -102,7 +111,7 @@ ul :active {
 
 .hero-btns {
   display: flex;
-  align-content: center;
+  justify-content: center;
 }
 .hero-btn {
   margin-top: 3rem;
@@ -112,11 +121,11 @@ ul :active {
   border: 1px solid #fff;
   font-weight: 600;
 }
-.hero-btn:hover,
-.hero-btn:active {
+.hero-btn:hover {
   cursor: pointer;
-  color: #0707ced5;
   font-weight: 700;
+}
+.hero-btn:active {
   transform: translateY(0.5rem);
 }
 .btn-cv {
@@ -137,7 +146,7 @@ ul :active {
 
 #about {
   width: 100rem;
-  margin: 9rem auto 2rem auto;
+  margin: 9rem auto 6rem auto;
   font-size: 1.6rem;
   padding: 0rem 2rem 2rem 3rem;
 }
@@ -151,22 +160,23 @@ ul :active {
   margin-bottom: 2rem;
   color: rgba(255, 255, 255, 0.712);
 }
-.cv-element {
+.resume-element {
   margin: 2rem;
   text-align: center;
 }
-.check-cv {
+.check-resume {
   padding: 1rem 4rem;
   background-color: #000;
   color: #fff;
   border: 1px solid #fff;
   font-weight: 600;
 }
-.check-cv:hover {
+.check-resume:hover {
   cursor: pointer;
-  transform: translateY(0.5rem);
-  color: #0707ced5;
   font-weight: 700;
+}
+.check-resume:active {
+  transform: translateY(0.5rem);
 }
 
 .project-section {
@@ -229,11 +239,10 @@ ion-icon {
 }
 .project-btn:hover {
   cursor: pointer;
-  transform: translateY(0.5rem);
   font-weight: 700;
 }
-.project-btn a:hover {
-  color: #0707ced5;
+.project-btn:active {
+  transform: translateY(0.5rem);
 }
 footer {
   font-size: 1.6rem;
@@ -287,7 +296,7 @@ footer ion-icon {
 }
 footer ion-icon:hover {
   cursor: pointer;
-  transform: translateY(-1rem);
+  /* transform: translateY(-1rem); */
 }
 
 .modal {

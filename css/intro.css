@@ -9,11 +9,12 @@ html {
 }
 body {
   font-size: 2rem;
-  background-color: #e6e6ed;
+  background-color: #000;
 }
 header {
-  background-color: #020246;
+  background-color: #000;
   max-width: 100%;
+  border-bottom: 1px solid #fff;
 }
 .nav {
   display: flex;
@@ -53,36 +54,39 @@ main {
 }
 h1 {
   font-size: 6rem;
+  color: #fff;
 }
 h3 {
+  color: #fff;
   font-size: 3rem;
 }
 span {
-  color: #020246;
+  color: #fff;
 }
 ion-icon {
-  color: #020246;
+  color: #fff;
   font-size: 4rem;
 }
 ion-icon:hover {
   cursor: pointer;
-  transform: translateY(-1rem);
+  /* transform: translateY(-1rem); */
 }
 .profile-btn {
   padding: 2rem 5rem;
   /* border-radius: 2rem; */
   border-radius: 0 10px 20px;
-  color: #fff;
-  background-color: #020246;
+  color: #000;
+  background-color: #fff;
   border: none;
+  font-size: 1.8rem;
 }
 .profile-btn a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.6rem;
 }
 .profile-btn:hover {
   cursor: pointer;
+  font-weight: 700;
 }
 main img {
   width: 40rem;
@@ -91,7 +95,6 @@ main img {
 .profile-image {
   width: 40rem;
   height: 40rem;
-  border-radius: 50%;
 }
 
 main img:hover {
@@ -106,6 +109,6 @@ main img:hover {
 .modal ul a {
   font-size: 3rem;
   text-decoration: none;
-  color: #04081d;
+  color: #000;
   font-weight: 600;
 }
