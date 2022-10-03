@@ -28,25 +28,29 @@ const projectSection = document.querySelector("#projects");
 //   section.classList.add("section-hidden");
 // });
 
-const nav = document.querySelector(".nav");
-const header = document.querySelector(".header");
-const navHeight = nav.getBoundingClientRect().height;
+const sectionHeroEl = document.querySelector(".hero-content");
 
-const stickyNav = function (entries) {
-  const [entry] = entries;
-  console.log(entry);
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
 
-  if (!entry.isIntersecting) nav.classList.add("sticky");
-  else nav.classList.remove("sticky");
-};
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
 
-const headerObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0,
-  rootMargin: `-${navHeight}px`,
-});
-
-headerObserver.observe(header);
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHeroEl);
 
 // implementing scroll
 heroNav.addEventListener("click", function () {

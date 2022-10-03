@@ -69,7 +69,7 @@ ion-icon {
 }
 ion-icon:hover {
   cursor: pointer;
-  /* transform: translateY(-1rem); */
+  transform: scale(1.2);
 }
 .profile-btn {
   padding: 2rem 5rem;
