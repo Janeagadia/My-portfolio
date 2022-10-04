@@ -9,13 +9,13 @@ html {
 }
 body {
   background-color: #000;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 130rem;
-  margin: 8rem auto;
-  padding: 0rem 5rem;
+  margin: 5rem auto;
+  padding: 0rem 5rem 2rem 5rem;
 }
 header {
   display: flex;
@@ -25,7 +25,7 @@ header {
   background-color: #000;
   color: #fff;
   align-items: center;
-  height: 9rem;
+  height: 6rem;
   padding: 0 4.8rem;
   /* position: relative; */
 }
@@ -68,7 +68,8 @@ header {
   font-size: 4rem;
 }
 .nav {
-  overflow: hidden;
+  /* overflow: hidden; */
+  align-items: center;
 }
 .nav ul {
   list-style: none;
